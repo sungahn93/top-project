@@ -12,3 +12,4 @@ Used:
 
 Included Recipe:
 - Bulgogi
+- Scrambled Egg
