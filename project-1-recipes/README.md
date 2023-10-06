@@ -13,3 +13,4 @@ Used:
 Included Recipe:
 - Bulgogi
 - Scrambled Egg
+- Beef Chow Fun (Beef with Rice Noodles in Soy Sauce)
