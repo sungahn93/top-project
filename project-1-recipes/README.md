@@ -14,3 +14,8 @@ Included Recipe:
 - Bulgogi
 - Scrambled Egg
 - Beef Chow Fun (Beef with Rice Noodles in Soy Sauce)
+
+
+----- Oct 13: Started adding CSS to the existing HTML 
+1. Deciding the format of the each recipe(whether to keep it uniform vs unique for each recipe).
+2. Thinking about how to organize the whole CSS file.
