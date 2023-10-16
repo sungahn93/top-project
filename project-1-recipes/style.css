@@ -1,0 +1,13 @@
+body{
+    margin: auto;
+    font-family: Garamond;
+    border: solid blue;
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: 600;
+    border: solid red;
+    padding: 10px;
+    background: rgb(210, 230, 236);
+}
