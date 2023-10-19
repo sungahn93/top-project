@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Hero New', sans-serif;
+    text-transform: uppercase;
     margin: auto;
     padding: 0;
 }
@@ -11,6 +12,13 @@ b{
     font-weight: 600;
     color: #457e59;
 }
+
+iframe{
+    display: flex;
+    min-height: 352px;
+    height: 100%;
+}
+
 a,
 .header,
 .intro{
@@ -18,9 +26,23 @@ a,
     color: white;
 }
 
+button{
+    background: #3882F6;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 14px;
+    border: 0px;
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+
 /* FIRST BOX */
 .header{
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,7 +51,6 @@ a,
 
 .logo{
     font-size: 20px;
-    border: 2px solid blue;
 }
 
 ul{
@@ -39,7 +60,6 @@ ul{
     display: flex;
     align-items: center;
     gap: 30px;
-    border: 2px solid rgb(150, 236, 1);
 }
 
 a{
@@ -51,12 +71,10 @@ a{
 /* SECOND BOX */
 
 .intro{
-    text-transform: uppercase;
     padding: 50px 15%;
     display: flex;
     flex-direction: row;
     gap: 5%;
-    border: 2px solid red;
 }
 
 .intro .content{
@@ -64,33 +82,29 @@ a{
     flex-direction: column;
     flex-basis: 50%;
     gap: 20px;
-    border: 2px solid black;
 }
 
 .title{
     font-size: 48px;
     font-weight: 800;
-    border: 3px solid blue;
 }
 
 .content-list{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    border: 3px solid red;
-}
-
-.intro .featured-playlist{
-    flex-basis: 50%;
-    border: 2px solid black;
+    gap: 5px;
 }
 
 .intro .content-button{
     /* need button customization */
     margin-top: auto;
     align-self: flex-start;
-    border: 3px solid green;
 }
+
+.intro .featured-playlist{
+    flex-basis: 50%;
+}
+
 
 /* THIRD BOX */
 .playlists{
@@ -112,10 +126,6 @@ a{
 
 .playlists-content .content-item{
     border: 3px solid black;
-}
-
-iframe{
-    border: 1px solid blue;
 }
 
 .text{
