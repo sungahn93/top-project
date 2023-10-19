@@ -49,10 +49,6 @@ button:hover{
     padding: 1% 15%;
 }
 
-.logo{
-    font-size: 20px;
-}
-
 ul{
     list-style: none;
     padding: 0px;
@@ -110,41 +106,51 @@ a{
 .playlists{
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    padding: 50px 15%;
+    gap: 50px;
 }
 
 .playlists .playlists-header{
-    border: 4px solid blue;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .playlists .playlists-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 4px solid green;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .playlists-content .content-item{
-    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
-.text{
-    border: 1px solid blue;
+.text b{
+    color: #3882F6;
 }
 
 /* FOURTH BOX */
 .quote-container{
+    background: #E5E7EB;
+    padding: 50px 15%;
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .quote{
-    border: 2px solid blue;
-}
-
-.author{
-    border: 2px solid black;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1F2937
 }
 
 /* FIFTH BOX */
