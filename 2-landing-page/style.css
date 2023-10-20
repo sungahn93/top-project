@@ -100,9 +100,9 @@ a{
 }
 
 .intro .featured-playlist{
-    flex-basis: 50%;
+    flex-basis: auto;
+    flex-grow: 1;
 }
-
 
 /* THIRD BOX */
 .playlists{
