@@ -73,14 +73,14 @@ a{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 2%;
 }
 
 .intro .content{
     display: flex;
     flex-direction: column;
     flex-basis: auto;
-    gap: 20px;
+    gap: 30px;
 }
 
 .title{
@@ -94,14 +94,25 @@ a{
     gap: 5px;
 }
 
-.intro .content-button{
+.content-button{
     margin-top: auto;
     align-self: flex-start;
 }
 
-.intro .featured-playlist{
-    flex-basis: auto;
+.featured-playlist{
+    flex-basis: 30%;
     flex-grow: 1;
+}
+
+.previous-featured{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.previous-title{
+    font-size: 33px;
+    font-weight: 800;
 }
 
 /* THIRD BOX */
