@@ -60,6 +60,36 @@ function play(playerSelection, computerSelection){
     }
 }
 
+function game(rounds){
+    for(i = 0; i < rounds; i++){
+        let playerChoicePrompt = prompt("Rock, Paper or Scissors", "");
+        let playerChoice = playerChoicePrompt.toLowerCase();
+
+
+        while(playerChoice != "rock" && playerChoice !== "paper" && playerChoice !== "scissors")
+        {
+            let x = prompt("Invalid play, enter again (rock, paper, scissors):", "");
+            let y = x.toLowerCase();
+            if(y === "rock" || y === "paper" || y === "scissors"){
+            playerChoice = y;
+            break;
+            }
+        }
+
+        console.log(play(playerChoice, getComputerChoice()));
+    }
+}
+/*
+let roundChoice = parseInt(prompt("How many rounds do you want to play?",""));
+while(isNaN(roundChoice))
+{
+    x = prompt("How many rounds? Numbers only:");
+    y = parseInt(x);
+    roundChoice = y;
+    break;
+}
+console.log(roundChoice);
+*/
 let playerChoicePrompt = prompt("Rock, Paper or Scissors", "");
 let playerChoice = playerChoicePrompt.toLowerCase();
 
@@ -74,3 +104,6 @@ while(playerChoice != "rock" && playerChoice !== "paper" && playerChoice !== "sc
 }
 
 console.log(play(playerChoice, getComputerChoice()));
+
+//game(roundChoice);
+
