@@ -29,7 +29,7 @@ function getComputerChoice(){
 }
 
 function play(playerSelection, computerSelection){
-    switch (playerSelection.toLowerCase()){
+    switch (playerSelection){
         case 'rock':
             if(computerSelection === 0){
                 return("It's a tie")
@@ -56,11 +56,21 @@ function play(playerSelection, computerSelection){
             }else if(computerSelection === 2){
                 return("It's a tie")
             }
-            
+
     }
 }
 
-let playerChoice = prompt("Rock, Paper or Scissors", " ");
+let playerChoicePrompt = prompt("Rock, Paper or Scissors", "");
+let playerChoice = playerChoicePrompt.toLowerCase();
+
+while(playerChoice != "rock" && playerChoice !== "paper" && playerChoice !== "scissors")
+{
+    let x = prompt("Invalid play, enter again:", "");
+    let y = x.toLowerCase();
+    if(y === "rock" || y === "paper" || y === "scissors"){
+    playerChoice = y;
+    break;
+    }
+}
 
 console.log(play(playerChoice, getComputerChoice()));
-console.log(playerChoice);
